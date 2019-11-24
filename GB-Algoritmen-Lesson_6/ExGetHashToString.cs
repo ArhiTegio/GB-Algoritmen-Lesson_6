@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace GB_Algoritmen_Lesson_6
 {
-    class ExGetHashToString
+    static class ExGetHashToString
     {
+        public static string GetHash(this string txt) => txt.Select(x => (int)x).Aggregate((x, y) => x + y).ToString();
     }
 }

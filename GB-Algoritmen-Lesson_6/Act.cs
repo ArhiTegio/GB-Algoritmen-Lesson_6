@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace GB_Algoritmen_Lesson_6
 {
-    class Act
+    abstract class Act
     {
+        public abstract void Work();
     }
 }
