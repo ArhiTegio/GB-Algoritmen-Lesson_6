@@ -1,0 +1,12 @@
+﻿1. Создать БД с именем demo25112019
+
+2. Создать таблицу Student
+CREATE TABLE [dbo].[Student] (
+    [Id]     INT            IDENTITY (1, 1) NOT NULL,
+    [Name]   NVARCHAR (MAX) NOT NULL,
+    [Age] BIGINT         NOT NULL,
+    CONSTRAINT [PK_dbo.Student] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+4. Заполнение выключается в конструкторе класса Company 

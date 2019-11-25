@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using static System.Console;
 
 namespace GB_Algoritmen_Lesson_6
 {
@@ -53,7 +54,7 @@ namespace GB_Algoritmen_Lesson_6
             }
             catch (Exception e)
             {
-                MessageBox.Show($"Ошибка при записе. {e.Message}", "Проблемы?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                WriteLine($"Ошибка при записе. {e.Message}");
                 fStream.Close();
             }
 
@@ -70,7 +71,7 @@ namespace GB_Algoritmen_Lesson_6
             }
             catch (Exception e)
             {
-                MessageBox.Show($"Ошибка при чтении. {e.Message}", "Проблемы?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                WriteLine($"Ошибка при записе. {e.Message}");
                 fStream.Close();
             }
             return obj;

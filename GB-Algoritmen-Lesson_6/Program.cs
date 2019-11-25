@@ -15,6 +15,7 @@ namespace GB_Algoritmen_Lesson_6
         {
             { "1", new Hash() },
             { "2", new BinarySearchTree() },
+            { "3", new StudentAnswer() },
         };
 
         static void Main(string[] args)
